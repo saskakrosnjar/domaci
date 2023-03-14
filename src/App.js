@@ -1,9 +1,9 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Str1 from "./components/Str1";
-import Str2 from "./components/Str2";
+import Home from "./components/pages/Home";
+import Services from "./components/pages/Services";
+import Str2 from "./components/pages/Str2";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Str1" element={<Str1 />} />
-        <Route path="/Str2" element={<Str2 />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/str2" element={<Str2 />} />
       </Routes>
     </BrowserRouter>
   );
